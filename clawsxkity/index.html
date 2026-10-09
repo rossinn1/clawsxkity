@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Claws x Kity | Inicio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Permanent+Marker&family=Titan+One&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--pink:#d93a8c;--pink-d:#b02a73;--pink-l:#ff8cc6;--soft:#ffd3ea;
+  box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:#fff;font-family:Poppins,system-ui,sans-serif;text-align:center;overflow-x:hidden}
+.wrap{max-width:520px;margin:0 auto;position:relative;overflow:hidden}
+.mk{font-family:'Permanent Marker',cursive;color:var(--pink-l)}
+svg.d{position:absolute;pointer-events:none;color:var(--pink);fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+
+/* ===== INICIO ===== */
+.hero{padding:30px 20px 34px;position:relative}
+.logo{position:relative;z-index:2;margin:6px auto 0;max-width:360px}
+.logo img{width:100%;display:block}
+.logo .txt{display:none;font-family:'Titan One',sans-serif;font-size:clamp(52px,17vw,84px);line-height:.9;color:var(--pink);-webkit-text-stroke:3px #fff;paint-order:stroke fill;padding:40px 0}
+.tag{font-size:21px;margin:12px 0 6px;position:relative;z-index:2}
+.srvline{font-weight:600;font-size:13.5px;margin:0 0 22px;position:relative;z-index:2}
+.btn{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:10px;margin:0 auto 14px;max-width:320px;padding:15px 18px;border-radius:40px;background:linear-gradient(180deg,#e04a9a,var(--pink-d));color:#fff;text-decoration:none;font-weight:600;box-shadow:0 0 0 3px #000,0 0 0 4px #d93a8c88,0 0 24px #d93a8c77}
+.btn svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn.o{background:transparent;box-shadow:none;border:2px solid var(--pink);max-width:230px;padding:10px;color:var(--soft)}
+.btn.o svg{stroke:var(--soft)}
+.more{color:var(--pink-l);font-size:14px;font-weight:600;margin-top:22px;position:relative;z-index:2}
+
+/* ===== TRABAJOS ===== */
+.works{padding:26px 14px 34px;background:linear-gradient(#0a0a0a,#000)}
+.gal{display:flex;justify-content:center;margin-bottom:14px}
+.ph{width:25%;aspect-ratio:3/4;border:3px solid var(--pink-l);background:linear-gradient(135deg,#2a0b1c,#6b1a43);overflow:hidden;box-shadow:0 0 14px #d93a8c66;margin:0 -2px}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph:nth-child(1){transform:rotate(-6deg) translateY(6px)}
+.ph:nth-child(2){transform:rotate(3deg) translateY(-6px);z-index:1}
+.ph:nth-child(3){transform:rotate(-3deg) translateY(-2px)}
+.ph:nth-child(4){transform:rotate(7deg) translateY(8px)}
+h2{font-family:'Permanent Marker',cursive;font-weight:400;font-size:25px;color:var(--pink);margin:10px 0 14px;text-transform:uppercase}
+.btn.s{max-width:170px;padding:8px;font-size:14px;margin-bottom:0}
+
+/* ===== SERVICIOS ===== */
+.serv{padding:30px 10px 26px}
+.srv{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:18px}
+.ic{width:62px;height:62px;margin:0 auto 8px;border:2px solid var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 12px #d93a8c55}
+.ic svg{width:32px;height:32px;fill:none;stroke:var(--pink-l);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.srv a{text-decoration:none;color:inherit}
+.srv h3{margin:0 0 4px;font-size:13px;color:var(--pink-l)}
+.srv p{margin:0;font-size:11px;line-height:1.35}
+
+/* ===== CTA FINAL ===== */
+.cta{position:relative;padding:34px 20px 80px;border-top:1px solid #d93a8c44}
+.cta .tag{font-size:17px;margin-top:0}
+.flame{position:absolute;bottom:0;color:var(--pink);fill:currentColor;stroke:none}
+footer{padding:0 0 16px;font-size:11px;color:#ffffff66}
+</style>
+</head>
+<body data-msg="Hola! Quiero agendar unas uñas 💅">
+
+<!-- Elementos reutilizables: brillito y flama -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12C7 11 11 7 12 0z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="flame" viewBox="0 0 60 90"><path d="M5 90C-2 60 14 50 12 30 10 18 22 8 20 0c14 14 24 28 18 46 10-6 14-16 12-26 12 22 12 50-6 70z"/></symbol>
+</svg>
+
+<script src="sitio.js"></script>
+
+<div class="wrap">
+
+<!-- ================= INICIO / HERO ================= -->
+<section class="hero" id="inicio">
+  <!-- Decoraciones estilo graffiti -->
+  <svg class="d" style="left:14px;top:34px;width:78px" viewBox="0 0 80 80"><path d="M40 6l9 24 26 2-20 16 7 26-22-14-22 14 7-26L5 32l26-2z"/></svg>
+  <svg class="d" style="right:26px;top:30px;width:26px;stroke:none;fill:var(--pink)" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <svg class="d" style="right:14px;top:150px;width:62px" viewBox="0 0 70 80"><path d="M35 22C28 4 4 8 6 28c2 16 22 24 29 30 7-6 27-14 29-30 2-20-22-24-29-6z"/><path d="M20 42v22M34 52v20M48 44v16"/></svg>
+  <svg class="d" style="left:-30px;top:330px;width:130px" viewBox="0 0 130 100"><ellipse cx="62" cy="58" rx="52" ry="34"/><path d="M20 38L14 12l26 14M92 30l10-18 12 24"/><circle cx="36" cy="58" r="3"/><circle cx="92" cy="58" r="3"/><ellipse cx="64" cy="66" rx="6" ry="4"/><path d="M6 56l14 2M6 70l14-4M118 56l-14 2M118 70l-14-4M40 22c-8-14 8-22 18-12-6 6-10 10-18 12z"/></svg>
+  <svg class="d" style="right:-8px;top:340px;width:100px" viewBox="0 0 100 90"><path d="M50 6l10 30 32-2-26 20 8 30-26-18-26 18 10-30L8 34l32 2z" style="stroke-width:3.5"/></svg>
+
+  <!-- LOGO: guarda tu logo como logo.png en la misma carpeta que este archivo -->
+  <div class="logo">
+    <img src="logo.png" alt="Claws x Kity" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <div class="txt">CLAWS ✕ KITY</div>
+  </div>
+
+  <div class="tag mk">UÑAS CON PERSONALIDAD ♡</div>
+  <p class="srvline">Manicura rusa · Acrílico · Nail art · Retiros</p>
+
+  <a class="btn wa" href="#"><svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.8A9 9 0 1 1 8 19.6z"/><path d="M9 8c0 4 3 7 7 7l1-2-3-1.5-1 1c-1-.5-2-1.500-2.500-2.500l1-1L9.500 7z"/></svg>Agendar por WhatsApp →</a>
+  <a class="btn o" href="https://instagram.com/clawsxkity"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>@clawsxkity</a>
+
+  <div class="more">Desliza para ver más<br>⌄</div>
+</section>
+
+<!-- ================= TRABAJOS RECIENTES ================= -->
+<section class="works" id="trabajos">
+  <div class="gal">
+    <!-- FOTOS: pon foto1.jpg, foto2.jpg, foto3.jpg y foto4.jpg en la misma carpeta -->
+    <div class="ph"><img src="foto123_lol.png" alt="Trabajo 1" onerror="this.remove()"></div>
+    <div class="ph"><img src="foto2.png" alt="Trabajo 2" onerror="this.remove()"></div>
+    <div class="ph"><img src="foto3.png" alt="Trabajo 3" onerror="this.remove()"></div>
+    <div class="ph"><img src="foto4.png" alt="Trabajo 4" onerror="this.remove()"></div>
+  </div>
+  <h2>Trabajos recientes ♡</h2>
+  <a class="btn o s" href="nailart.html" style="margin:0 auto">Ver galería →</a>
+</section>
+
+<!-- ================= NUESTROS SERVICIOS ================= -->
+<section class="serv" id="servicios">
+  <h2><svg style="width:14px;height:14px;color:var(--pink)" viewBox="0 0 24 24"><use href="#spark"/></svg> Mis servicios <svg style="width:14px;height:14px;color:var(--pink)" viewBox="0 0 24 24"><use href="#spark"/></svg></h2>
+  <div class="srv">
+    <a href="servicios.html"><div class="ic"><svg viewBox="0 0 32 32"><path d="M11 28c-3-6-3-14 1-20 2-3 6-3 8 0 4 6 4 14 1 20z"/><path d="M13 14h6"/></svg></div><h3>Manicura rusa</h3><p>Uñas limpias, prolijas y duraderas.</p></a>
+    <a href="acrilico.html"><div class="ic"><svg viewBox="0 0 32 32"><path d="M10 28c-2-8-1-16 3-22 2-3 6-1 6 2 4 4 4 12 1 20z"/><path d="M16 12l3 3-3 3-3-3z"/></svg></div><h3>Acrílico</h3><p>Largo, resistencia y estilo.</p></a>
+    <a href="nailart.html"><div class="ic"><svg viewBox="0 0 32 32"><path d="M16 27C6 19 4 14 6 10c3-4 8-2 10 2 2-4 7-6 10-2 2 4 0 9-10 17z"/></svg></div><h3>Nail art</h3><p>Diseños únicos para cada mood.</p></a>
+    <a href="retiros.html"><div class="ic"><svg viewBox="0 0 32 32"><path d="M26 14a10 10 0 0 0-18-4M6 18a10 10 0 0 0 18 4"/><path d="M8 4v6h6M24 28v-6h-6"/></svg></div><h3>Retiros</h3><p>Seguro y sin dañar tus uñas.</p></a>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta">
+  <div class="tag mk">¿LISTA PARA TUS PRÓXIMAS UÑAS? ♡</div>
+  <a class="btn wa" href="#"><svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.8A9 9 0 1 1 8 19.6z"/><path d="M9 8c0 4 3 7 7 7l1-2-3-1.5-1 1c-1-.5-2-1.500-2.500-2.500l1-1L9.500 7z"/></svg>Agendar por WhatsApp →</a>
+  <svg class="flame" style="left:-6px;width:70px;height:105px" viewBox="0 0 60 90"><use href="#flame"/></svg>
+  <svg class="flame" style="left:44px;width:48px;height:70px" viewBox="0 0 60 90"><use href="#flame"/></svg>
+  <svg class="flame" style="right:44px;width:48px;height:62px" viewBox="0 0 60 90"><use href="#flame"/></svg>
+  <svg class="flame" style="right:-6px;width:66px;height:96px" viewBox="0 0 60 90"><use href="#flame"/></svg>
+  <svg class="d" style="right:22px;bottom:70px;width:44px" viewBox="0 0 70 80"><path d="M35 22C28 4 4 8 6 28c2 16 22 24 29 30 7-6 27-14 29-30 2-20-22-24-29-6z"/><path d="M20 42v22M34 52v20M48 44v16"/></svg>
+</section>
+<footer>© Claws x Kity</footer>
+
+</div>
+
+</body>
+</html>

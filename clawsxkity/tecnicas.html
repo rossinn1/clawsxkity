@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Claws x Kity | Técnicas y efectos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Permanent+Marker&family=Titan+One&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--pink:#e0338f;--pink-d:#c4287a;--pink-l:#ff8cc6;--soft:#ffd3ea;
+  box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:#fff;font-family:Poppins,system-ui,sans-serif;overflow-x:hidden;text-align:center}
+.wrap{max-width:520px;margin:0 auto;position:relative;overflow:hidden;padding-bottom:30px}
+.mk{font-family:'Permanent Marker',cursive}
+svg.d{position:absolute;pointer-events:none;color:var(--pink);fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+svg.f{fill:var(--pink);stroke:none}
+
+/* ===== TÍTULO ===== */
+.hd{position:relative;padding:34px 16px 6px}
+h1{font-family:'Titan One',sans-serif;font-weight:400;margin:0;font-size:clamp(40px,13vw,66px);line-height:1.02;color:var(--pink);-webkit-text-stroke:5px #fff;paint-order:stroke fill;text-shadow:0 0 26px #e0338f88;text-transform:uppercase;position:relative;z-index:2}
+.drops{display:flex;justify-content:space-around;width:70%;margin:-4px auto 0;position:relative;z-index:1}
+.drops svg{width:12px;height:22px;fill:var(--pink);stroke:#fff;stroke-width:2.5}
+.drops svg:nth-child(2n){height:14px}
+.promo{display:flex;align-items:center;justify-content:center;gap:10px;margin:14px 0 0;position:relative;z-index:2}
+.promo span{font-size:clamp(18px,5.5vw,26px);color:var(--pink-l)}
+.promo svg{width:30px;height:28px;fill:none;stroke:var(--pink);stroke-width:4;stroke-linecap:round;flex:none}
+
+/* ===== LISTA ===== */
+.card{margin:30px 16px 0;border:3px solid var(--pink);border-radius:30px;padding:4px 16px;background:#0a0a0a;box-shadow:0 0 18px #e0338f55;position:relative;z-index:2}
+.row{display:flex;align-items:center;gap:12px;padding:20px 0;text-align:left}
+.ic{width:44px;height:44px;flex:none;border:2px solid var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 10px #e0338f66}
+.ic svg{width:20px;height:20px;fill:var(--pink-l)}
+.row .t{flex:1;min-width:0}
+.row h3{margin:0;font-size:clamp(14.5px,4.4vw,18px);font-weight:700;text-transform:uppercase;line-height:1.2}
+.row p{margin:3px 0 0;font-size:12px;color:#ffffffaa}
+.pr{text-align:right;white-space:nowrap}
+.pr b{display:block;font-size:clamp(19px,6vw,26px);color:var(--soft)}
+.pr small{display:block;font-size:11.5px;color:var(--pink-l);font-weight:600}
+.pr b + small{margin-top:1px}
+.sep{display:flex;align-items:center;gap:6px}
+.sep::before,.sep::after{content:"";height:2px;flex:1;background:var(--pink)}
+.sep svg{width:18px;height:18px;color:var(--pink);fill:currentColor}
+
+/* ===== PIE ===== */
+.end{margin-top:30px;position:relative}
+.end .ln{display:flex;align-items:center;gap:12px;padding:0 24px;margin-top:2px}
+.end .ln::before,.end .ln::after{content:"";height:2px;flex:1;background:var(--pink)}
+.end svg.bw{width:56px;height:44px;fill:none;stroke:var(--pink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;margin:26px auto 0;max-width:300px;padding:14px 18px;border-radius:40px;background:linear-gradient(180deg,#e84aa0,var(--pink-d));color:#fff;text-decoration:none;font-weight:600;box-shadow:0 0 0 3px #000,0 0 0 4px #e0338f88,0 0 24px #e0338f77}
+.btn svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+</style>
+</head>
+<body data-msg="Hola! Quiero agendar y agregar una técnica 💅">
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12C7 11 11 7 12 0z"/></symbol>
+  <symbol id="bow" viewBox="0 0 70 50"><path d="M35 25C24 8 6 10 6 22s16 18 29 3zm0 0c11-17 29-15 29-3S48 40 35 25z"/><circle cx="35" cy="25" r="4"/></symbol>
+  <symbol id="heart" viewBox="0 0 70 90"><path d="M35 22C28 4 4 8 6 28c2 16 22 24 29 30 7-6 27-14 29-30 2-20-22-24-29-6z"/><path d="M20 42v26M34 52v28M48 44v18"/></symbol>
+</svg>
+
+<script src="sitio.js"></script>
+
+<div class="wrap">
+
+<!-- ================= TÍTULO ================= -->
+<section class="hd">
+  <svg class="d f" style="left:20px;top:52px;width:30px;height:30px" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <svg class="d f" style="left:46px;top:96px;width:16px;height:16px" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <svg class="d f" style="right:20px;top:60px;width:26px;height:26px" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <h1>Técnicas<br>y efectos</h1>
+  <div class="promo">
+    <svg viewBox="0 0 34 30"><path d="M30 6L6 10M28 18L8 20M20 28L10 28"/></svg>
+    <span class="mk">Se suman al servicio base</span>
+    <svg viewBox="0 0 34 30" style="transform:scaleX(-1)"><path d="M30 6L6 10M28 18L8 20M20 28L10 28"/></svg>
+  </div>
+</section>
+
+<!-- ================= LISTA =================
+     Cambia solo los textos y precios. Para agregar una técnica,
+     copia un bloque <div class="row"> completo (y un <div class="sep"> entre medio). -->
+<section class="card">
+
+  <div class="row">
+    <div class="ic"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+    <div class="t"><h3>Baby boomer / ombré</h3><p>Set completo</p></div>
+    <div class="pr"><b>+$3.000</b></div>
+  </div>
+  <div class="sep"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+
+  <div class="row">
+    <div class="ic"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+    <div class="t"><h3>Encapsulados</h3><p>Por uña · set completo</p></div>
+    <div class="pr"><b>+$800</b><small>+$5.000 set</small></div>
+  </div>
+  <div class="sep"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+
+  <div class="row">
+    <div class="ic"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+    <div class="t"><h3>French reversa</h3><p>Por uña · set completo</p></div>
+    <div class="pr"><b>+$1.500</b><small>+$8.000 set</small></div>
+  </div>
+  <div class="sep"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+
+  <div class="row">
+    <div class="ic"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+    <div class="t"><h3>Francesa tradicional</h3></div>
+    <div class="pr"><b>+$4.000</b></div>
+  </div>
+  <div class="sep"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+
+  <div class="row">
+    <div class="ic"><svg viewBox="0 0 24 24"><use href="#spark"/></svg></div>
+    <div class="t"><h3>Francesa moderna</h3><p>V-shape / deep</p></div>
+    <div class="pr"><b>+$6.000</b></div>
+  </div>
+
+</section>
+
+<!-- ================= PIE ================= -->
+<section class="end">
+  <svg class="d f" style="left:50%;top:-20px;margin-left:-9px;width:18px;height:18px" viewBox="0 0 24 24"><use href="#spark"/></svg>
+  <svg class="d" style="left:14px;top:-10px;width:44px" viewBox="0 0 70 90"><use href="#heart"/></svg>
+  <svg class="d" style="right:14px;top:-4px;width:50px" viewBox="0 0 70 50"><use href="#bow"/></svg>
+  <div class="ln"><svg class="bw" viewBox="0 0 70 50"><use href="#bow"/></svg></div>
+  <a class="btn wa" href="#"><svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.8A9 9 0 1 1 8 19.6z"/><path d="M9 8c0 4 3 7 7 7l1-2-3-1.5-1 1c-1-.5-2-1.500-2.500-2.500l1-1L9.500 7z"/></svg>Agendar por WhatsApp →</a>
+</section>
+
+</div>
+
+</body>
+</html>
